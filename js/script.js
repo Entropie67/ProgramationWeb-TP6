@@ -9,5 +9,14 @@ jQuery(document).ready(function($) {
         $("ul").append(ajout);
     })
 
+    $("li").click(function(){
+        if ($(this).attr("class") == "check") {
+            $(this).attr({class: "nocheck"});
+        }
+        else{
+            $(this).attr({class: "check"});
+        }
+
+    })
 
 });
