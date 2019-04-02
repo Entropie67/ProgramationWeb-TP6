@@ -9,6 +9,18 @@ jQuery(document).ready(function($) {
         $("ul").append(ajout);
     })
 
+    // Avec délégation
+    $("ul").on("click", "li", function(){
+        if ($(this).attr("class") == "check") {
+            $(this).attr({class: "nocheck"});
+        }
+        else{
+            $(this).attr({class: "check"});
+        }
+    } )
+
+    /*
+    // Sans délégation
     $("li").click(function(){
         if ($(this).attr("class") == "check") {
             $(this).attr({class: "nocheck"});
@@ -16,7 +28,6 @@ jQuery(document).ready(function($) {
         else{
             $(this).attr({class: "check"});
         }
-
     })
-
+    */
 });
