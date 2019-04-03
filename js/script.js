@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
     $("button").click(function () {
         var ajout = "<li>" + $("input").val() + "</li>";
         $("ul").append(ajout);
+        $("input").val('');
     })
 
     // Avec délégation

@@ -1,5 +1,7 @@
 body{
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
 input{
     border-color: darkgray;
@@ -36,4 +38,30 @@ ul{
 }
 footer{
     font-size: 50%;
+}
+.corrige{
+    border-radius: 10px;
+    border-style: solid;
+    padding: 1em;
+}
+
+.rond {
+    display: inline-block;
+    border: 2px dotted orange;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+figcaption {
+    text-align:center;
 }
